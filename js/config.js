@@ -12,6 +12,6 @@ const SAMPLE_SERVER_BASE_URL = 'http://YOUR-SERVER-URL';
 
 const fragParams = { ...Object.fromEntries(new URLSearchParams(window.location.hash.slice(1))) }
 
-const API_KEY = fragParams?.api_key ?? '';
-const SESSION_ID = fragParams?.session_id ?? '';
-const TOKEN = fragParams?.token ?? '';
+const API_KEY = fragParams.api_key ?? '';
+const SESSION_ID = fragParams.session_id ?? '';
+const TOKEN = fragParams.token ?? '';

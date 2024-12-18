@@ -1,5 +1,9 @@
 /* global OT API_KEY TOKEN SESSION_ID SAMPLE_SERVER_BASE_URL */
 
+OT.on("exception", e => {
+  console.log("[OT] exception", e)
+})
+
 let apiKey;
 let sessionId;
 let token;
